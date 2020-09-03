@@ -1,0 +1,20 @@
+parameters:
+  #Admin view path
+  teknoo.east.paas.symfony.view.account.new.file: '@@TeknooEastWebsite/AdminAccount/new.html.twig'
+  teknoo.east.paas.symfony.view.account.edit.file: '@@TeknooEastWebsite/AdminAccount/edit.html.twig'
+  teknoo.east.paas.symfony.view.account.list.file: '@@TeknooEastWebsite/AdminAccount/list.html.twig'
+
+  teknoo.east.paas.symfony.view.project.new.file: '@@TeknooEastWebsite/AdminProject/new.html.twig'
+  teknoo.east.paas.symfony.view.project.edit.file: '@@TeknooEastWebsite/AdminProject/edit.html.twig'
+  teknoo.east.paas.symfony.view.project.list.file: '@@TeknooEastWebsite/AdminProject/list.html.twig'
+
+  teknoo.east.paas.symfony.view.job.list.file: '@@TeknooEastWebsite/AdminJob/list.html.twig'
+
+services:
+  # default configuration for services in *this* file
+  _defaults:
+    autowire: true      # Automatically injects dependencies in your services.
+    autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+    public: false       # Allows optimizing the container by removing unused services; this also means
+      # fetching services directly from the container via $container->get() won't work.
+    # The best practice is to be explicit about your dependencies anyway.

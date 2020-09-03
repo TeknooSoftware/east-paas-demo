@@ -1,0 +1,51 @@
+{# app/Resources/TeknooEastWebsiteBundle/views/AdminItem/list.html.twig #}
+
+{% extends '@TeknooEastWebsite/Admin/list.html.twig' %}
+
+{% import '@TeknooEastWebsite/Admin/utils.html.twig' as utils %}
+
+{% block listTitle %}
+    Items
+{% endblock %}
+
+{% block newButton %}
+    <a class="btn btn-dark" href="{{ path('_teknoo_website_admin_item_new') }}" title="Add a new item">New</a>
+{% endblock %}
+
+{% block listTableHeader %}
+    <thead>
+    <tr>
+        <th class="cell-id">#</th>
+        <th><a href="{{ utils.orderUrl(queryParams, 'location') }}">Location</a></th>
+        <th><a href="{{ utils.orderUrl(queryParams, 'name') }}">Name</a></th>
+        <th><a href="{{ utils.orderUrl(queryParams, 'position') }}">Position</a></th>
+        <th>Parent</th>
+        <th>Content</th>
+        <th class="cell-action">Action</th>
+    </tr>
+    </thead>
+{% endblock %}
+
+{% block listTableEmpty %}
+    <tr>
+        <td colspan="7">No entries found</td>
+    </tr>
+{% endblock %}
+
+
+{% block listTableRow %}
+    <tr>
+        <td>{{ object.id }}</td>
+        <td>{{ object.location }}</td>
+        <td>{{ object.name }}</td>
+        <td>{{ object.position }}</td>
+        <td>{{ object.parent }}</td>
+        <td>{{ object.content }}</td>
+        <td>
+            <a href="{{  path('_teknoo_website_admin_item_edit', {'id':object.id}) }}" title="Edit this entry"><span class="fa fa-pencil"></span></a>
+            <a href="{{  path('_teknoo_website_admin_item_delete', {'id':object.id}) }}" title="Delete this entry"><span class="fa fa-trash"></span></a>
+        </td>
+    </tr>
+{% endblock %}
+
+{% block menuItemsClass ' active' %}

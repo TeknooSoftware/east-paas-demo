@@ -1,0 +1,47 @@
+{# src/AdminBundle/Resources/views/Account/list.html.twig #}
+
+{% extends '@TeknooEastWebsite/Admin/list.html.twig' %}
+
+{% import '@TeknooEastWebsite/Admin/utils.html.twig' as utils %}
+
+{% block listTitle %}
+    Accounts
+{% endblock %}
+
+{% block newButton %}
+    <a class="btn btn-dark" href="{{ path('admin_account_new') }}" title="Add a new account">New</a>
+{% endblock %}
+
+{% block listTableHeader %}
+    <thead>
+    <tr>
+        <th class="cell-id">#</th>
+        <th><a href="{{ utils.orderUrl(queryParams, 'name') }}">Name</a></th>
+        <th class="cell-action">Action</th>
+        <th><a href="{{ utils.orderUrl(queryParams, 'createdAt') }}">Created At</a></th>
+        <th><a href="{{ utils.orderUrl(queryParams, 'updatedAt') }}">Updated At</a></th>
+    </tr>
+    </thead>
+{% endblock %}
+
+{% block listTableEmpty %}
+    <tr>
+        <td colspan="5">No entries found</td>
+    </tr>
+{% endblock %}
+
+
+{% block listTableRow %}
+    <tr>
+        <td>{{ object.id }}</td>
+        <td>{{ object }}</td>
+        <td>{{ object.createdAt|date('Y M d H:i:s') }}</td>
+        <td>{{ object.updatedAt|date('Y M d H:i:s') }}</td>
+        <td>
+            <a href="{{  path('admin_account_edit', {'id':object.id}) }}" title="Edit this entry"><span class="fa fa-pencil"></span></a>
+            <a href="{{  path('admin_account_delete', {'id':object.id}) }}" title="Delete this entry"><span class="fa fa-trash"></span></a>
+        </td>
+    </tr>
+{% endblock %}
+
+{% block menuAccountsClass ' active' %}

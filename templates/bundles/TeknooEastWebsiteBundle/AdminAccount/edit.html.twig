@@ -1,0 +1,43 @@
+{# src/AdminBundle/Resources/views/Account/edit.html.twig #}
+
+{% extends '@TeknooEastWebsite/Admin/form.html.twig' %}
+
+{% block formTitle 'Editing account' %}
+
+{% block btnExtraTrans %}
+    <a class="btn btn-dark" href="{{ path('admin_project_new', {'accountId':formView.vars.value.id}) }}" title="Add a new project">New Project</a>
+{% endblock %}
+
+{% block crudFormFields %}
+    {{ form_errors(formView) }}
+    <div class="form-group row">
+        {{ form_row(formView.name, {"largeRow": true}) }}
+    </div>
+    <div class="form-group row">
+        {{ form_row(formView.owner, {"largeRow": true}) }}
+    </div>
+    <hr/>
+    <h3>Billing information</h3>
+    <div class="form-group row">
+        {{ form_row(formView.billingInformation.name) }}
+        {{ form_row(formView.billingInformation.service) }}
+    </div>
+    <div class="form-group row">
+        {{ form_row(formView.billingInformation.address, {"largeRow": true}) }}
+    </div>
+    <div class="form-group row">
+        {{ form_row(formView.billingInformation.zip) }}
+        {{ form_row(formView.billingInformation.city) }}
+    </div>
+    <div class="form-group row">
+        {{ form_row(formView.billingInformation.country) }}
+        {{ form_row(formView.billingInformation.vat) }}
+    </div>
+    <hr/>
+    <h3>Payment information</h3>
+    <div class="form-group row">
+        {{ form_row(formView.paymentInformation.cardHash, {"largeRow": true}) }}
+    </div>
+{% endblock %}
+
+{% block menuAccountsClass ' active' %}

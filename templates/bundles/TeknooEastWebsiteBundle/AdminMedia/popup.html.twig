@@ -1,0 +1,8 @@
+{# app/Resources/TeknooEastWebsiteBundle/views/AdminMedia/popup.html.twig #}
+
+<ul id="list-media">
+    {% for object in objectsCollection %}
+        <li><img class="img img-dynamic" src="{{ path('_teknoo_website_media', {'id':object.id}) }}" alt="{{ object.metadata.alternative }}"/></li>
+    {% endfor %}
+</ul>
+<div style="clear:both"></div>

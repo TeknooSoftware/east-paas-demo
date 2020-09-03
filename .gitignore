@@ -1,0 +1,14 @@
+/vendor/
+###> symfony/framework-bundle ###
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+###> squizlabs/php_codesniffer ###
+/.phpcs-cache
+/phpcs.xml
+###< squizlabs/php_codesniffer ###
+.phpunit.result.cache
+.php_cs.cache
+/certs.d/*
+/mongo

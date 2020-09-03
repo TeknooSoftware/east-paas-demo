@@ -1,0 +1,17 @@
+website:
+  resource: '@TeknooEastWebsiteBundle/Resources/config/routing.yml'
+
+app_job_new:
+  path: '/project/{projectId}/environment/{envName}/job/create'
+  methods:  ['GET', 'POST', 'PUT']
+  defaults: { _controller: 'teknoo.east.paas.symfony.end_point.new_job' }
+
+app_job_add_history:
+  path: '/project/{projectId}/environment/{envName}/job/{jobId}/log'
+  methods:  ['PUT']
+  defaults: { _controller: 'teknoo.east.paas.symfony.end_point.job_add_history' }
+
+app_worker_job_run:
+  path: '/project/{projectId}/environment/{envName}/job/{jobId}/run'
+  methods:  ['PUT']
+  defaults: { _controller: 'teknoo.east.paas.symfony.end_point.job_run' }

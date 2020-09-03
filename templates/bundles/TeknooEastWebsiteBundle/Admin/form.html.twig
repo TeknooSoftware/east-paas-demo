@@ -1,0 +1,42 @@
+{# app/Resources/TeknooEastWebsiteBundle/views/Admin/form.html.twig #}
+
+{% extends '@TeknooEastWebsite/Admin/layout.html.twig' %}
+
+{% block content %}
+    <div class="row title">
+        <div class="col-8">
+            <h1>{% block formTitle '' %}
+                <span class="badge badge-secondary">{{ request.getAttribute('locale')|capitalize }}</span>
+            </h1>
+        </div>
+        {% if true == isTranslatable and languagesList is defined %}
+            <div class="col-4 text-right">
+                <div class="btn-group" role="group" aria-label="Langage">
+                    {% for locale in languagesList %}
+                        <a class="btn btn-secondary" href="?locale={{ locale }}">{{ locale|capitalize }}</a>
+                    {% endfor %}
+                </div>
+                {% block btnExtraTrans '' %}
+            </div>
+        {% endif %}
+        {% block btnExtra '' %}
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr/>
+            {% form_theme formView '@TeknooEastWebsite/Admin/fields.html.twig' %}
+            {{ form_start(formView, {"attr":{"class":"form-horizontal", "action":"?locale=" ~ request.getAttribute('locale')}}) }}
+                {{ form_errors(formView) }}
+                {% block crudFormFields %}{% endblock %}
+                <div class="form-group text-right">
+                    <hr/>
+                    {% block formButton %}
+                    <button type="reset" class="btn btn-default">Cancel</button>
+                    <button type="submit" class="btn btn-dark" name="save">Save</button>
+                    {% endblock %}
+                </div>
+            {{ form_end(formView) }}
+        </div>
+    </div>
+{% endblock %}
+

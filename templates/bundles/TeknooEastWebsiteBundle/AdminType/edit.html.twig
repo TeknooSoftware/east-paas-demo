@@ -1,0 +1,31 @@
+{# app/Resources/TeknooEastWebsiteBundle/views/AdminType/edit.html.twig #}
+
+{% extends '@TeknooEastWebsite/Admin/form.html.twig' %}
+
+{% block formTitle 'Editing type' %}
+
+{% block crudFormFields %}
+    {{ form_errors(formView) }}
+    <div class="form-group row">
+        {{ form_row(formView.name) }}
+        {{ form_row(formView.template) }}
+    </div>
+    <div class="form-group">
+        <hr/>
+        <h3>Blocks <a class="btn btn-secondary btn-add-subform" href="#">Add</a></h3>
+        {% do formView.blocks.setRendered %}
+        <ul class="blocks subforms" data-prototype="{{ form_widget(formView.blocks.vars.prototype)|e('html_attr') }}">
+            {% for block in formView.blocks %}
+                <li class="form-group row">
+                    {{ form_row(block.name) }}
+                    {{ form_row(block.type, {"colClass": "col-sm-3"}) }}
+                    <div class="col-sm-1">
+                        <a href="#" class="action-remove"><span class="fa fa-trash "></span></a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
+
+{% block menuTypesClass ' active' %}

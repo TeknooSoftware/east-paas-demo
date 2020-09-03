@@ -1,0 +1,45 @@
+{# app/Resources/TeknooEastWebsiteBundle/views/Admin/fields.html.twig #}
+
+{% block form_errors %}
+    {% apply spaceless %}
+        {% if errors|length > 0 %}
+            {% if compound %}
+                <div class="alert alert-danger" role="alert">
+                    {% for error in errors %}{{ error.message }}{% endfor %}
+                </div>
+            {% else %}
+                <ul>
+                    {% for error in errors %}
+                        <li>{{ error.message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endif %}
+    {% endapply %}
+{% endblock form_errors %}
+
+{% block form_row %}
+    {% set labelClass = {"label_attr": {"class":"col-sm-2 col-form-label text-right"}} %}
+    {% set colClass = colClass|default('col-sm-4') %}
+    {% if largeRow is defined %}
+        {% set labelClass = {"label_attr": {"class":"col-sm-2 col-form-label text-right"}} %}
+        {% set colClass = 'col-sm-10' %}
+    {% endif %}
+    {{ form_label(form, null, labelClass) }}
+    <div class="{{ colClass }}">
+        {{ form_errors(form) }}
+        {{ form_widget(form, {'attr':{'class':'form-control'}|merge(attr)}) }}
+    </div>
+{% endblock %}
+
+{% block _type_blocks_entry_widget %}
+    <li class="form-group row">
+        {{ form_errors(form) }}
+        {{ form_row(form.name, {"colClass": "col-sm-4"}) }}
+        {{ form_row(form.type, {"colClass": "col-sm-3"}) }}
+        <div class="col-sm-1">
+            <a href="#" class="action-remove"><span class="fa fa-trash "></span></a>
+        </div>
+    </li>
+{% endblock %}
+

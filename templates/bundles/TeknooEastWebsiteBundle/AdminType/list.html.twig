@@ -1,0 +1,42 @@
+{# app/Resources/TeknooEastWebsiteBundle/views/AdminType/list.html.twig #}
+
+{% extends '@TeknooEastWebsite/Admin/list.html.twig' %}
+
+{% import '@TeknooEastWebsite/Admin/utils.html.twig' as utils %}
+
+{% block listTitle %}
+    Types
+{% endblock %}
+
+{% block newButton %}
+    <a class="btn btn-dark" href="{{ path('_teknoo_website_admin_type_new') }}" title="Create a new type">New</a>
+{% endblock %}
+
+{% block listTableHeader %}
+    <thead>
+    <tr>
+        <th class="cell-id">#</th>
+        <th><a href="{{ utils.orderUrl(queryParams, 'name') }}">Name</a></th>
+        <th class="cell-action">Action</th>
+    </tr>
+    </thead>
+{% endblock %}
+
+{% block listTableEmpty %}
+    <tr>
+        <td colspan="3">No entries found</td>
+    </tr>
+{% endblock %}
+
+{% block listTableRow %}
+    <tr>
+        <td>{{ object.id }}</td>
+        <td>{{ object.name }}</td>
+        <td>
+            <a href="{{  path('_teknoo_website_admin_type_edit', {'id':object.id}) }}" title="Edit this entry"><span class="fa fa-pencil"></span></a>
+            <a href="{{  path('_teknoo_website_admin_type_delete', {'id':object.id}) }}" title="Delete this entry"><span class="fa fa-trash"></span></a>
+        </td>
+    </tr>
+{% endblock %}
+
+{% block menuTypesClass ' active' %}

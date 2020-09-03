@@ -1,0 +1,1 @@
+"use strict";$(function(){thesaas.config({googleApiKey:"AIzaSyDRBLFOTTh2NFM93HpUA4ZrA99yKnCAsto",googleAnalyticsId:"",smoothScroll:!0})});

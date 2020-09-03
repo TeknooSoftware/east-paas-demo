@@ -1,0 +1,60 @@
+version: "2"
+networks:
+  backend: ~
+  bdd: ~
+services:
+  db:
+    build:
+      context: ./docker/mongo
+    ports:
+      - 27017:27017
+    networks:
+      - bdd
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin_paas
+      MONGO_INITDB_ROOT_PASSWORD: paas_pwd
+      MONGO_INITDB_DATABASE: paas
+    volumes:
+      - ./mongo:/var/lib/mongodb
+  php:
+    build:
+      context: ./docker/php74
+    privileged: true
+    expose:
+      - 9000
+    networks:
+      - bdd
+      - backend
+    links:
+      - db
+    volumes:
+      - ./:/var/www/paas
+      - /var/lib/docker:/var/lib/docker
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./certs.d:/etc/docker/certs.d
+    environment:
+      - APP_ENV=dev
+      - APP_SECRET=47fc53f0b1c436cf387c68832e5fdd5d
+      - MONGODB_SERVER=mongodb://paas_user:paas_pwd@db/paas
+      - MONGODB_NAME=paas
+      - MAILER_TRANSPORT=smtp
+      - MAILER_HOST=127.0.0.1
+      - MAILER_USER=
+      - MAILER_PASSWORD=
+      - MAILER_FROM=
+      - MAILER_SUBJECT="PaaS Contact"
+      - JOB_ROOT=/tmp
+      - WEBSITE_HOSTNAME=apache
+      - HTTP_CLIENT_VERIFY_SSL=false
+      - HTTP_CLIENT_TIMEOUT=3
+      - MESSENGER_JOB_TRANSPORT_DSN=tkpaas://put:localhost/project/%projectId/environment/%envName/job/%jobId/run
+  apache:
+    build:
+      context: ./docker/apache
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - backend
+    volumes:
+      - ./:/var/www/paas

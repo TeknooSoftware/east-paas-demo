@@ -1,0 +1,24 @@
+{# app/Resources/TeknooEastWebsiteBundle/views/AdminUser/edit.html.twig #}
+
+{% extends '@TeknooEastWebsite/Admin/form.html.twig' %}
+
+{% block formTitle 'Editing user' %}
+
+{% block crudFormFields %}
+    {{ form_errors(formView) }}
+    <div class="form-group row">
+        {{ form_row(formView.firstName) }}
+        {{ form_row(formView.lastName) }}
+    </div>
+    <div class="form-group row">
+        {{ form_row(formView.roles, {"largeRow": true}) }}
+    </div>
+    <div class="form-group row">
+        {{ form_row(formView.email, {"largeRow": true}) }}
+    </div>
+    <div class="form-group row">
+        {{ form_row(formView.password) }}
+    </div>
+{% endblock %}
+
+{% block menuUsersClass ' active' %}

@@ -1,0 +1,48 @@
+{# app/Resources/TeknooEastWebsiteBundle/views/AdminContent/list.html.twig #}
+
+{% extends '@TeknooEastWebsite/Admin/list.html.twig' %}
+
+{% import '@TeknooEastWebsite/Admin/utils.html.twig' as utils %}
+
+{% block listTitle %}
+    Contents
+{% endblock %}
+
+{% block newButton %}
+    <a class="btn btn-dark" href="{{ path('_teknoo_website_admin_content_new') }}" title="Create a new content">New</a>
+{% endblock %}
+
+{% block listTableHeader %}
+    <thead>
+    <tr>
+        <th class="cell-id">#</th>
+        <th><a href="{{ utils.orderUrl(queryParams, 'title') }}">Title</a></th>
+        <th>Subtitle</th>
+        <th>Type</th>
+        <th><a href="{{ utils.orderUrl(queryParams, 'publishedAt') }}">Published</a></th>
+        <th class="cell-action">Action</th>
+    </tr>
+    </thead>
+{% endblock %}
+
+{% block listTableEmpty %}
+    <tr>
+        <td colspan="6">No entries found</td>
+    </tr>
+{% endblock %}
+
+{% block listTableRow %}
+    <tr>
+        <td>{{ object.id }}</td>
+        <td>{{ object.title }}</td>
+        <td>{{ object.subtitle }}</td>
+        <td>{{ object.type }}</td>
+        <td>{% if object.publishedAt is not empty %}Yes{% else %}No{% endif %}</td>
+        <td>
+            <a href="{{  path('_teknoo_website_admin_content_edit', {'id':object.id}) }}" title="Edit this entry"><span class="fa fa-pencil"></span></a>
+            <a href="{{  path('_teknoo_website_admin_content_delete', {'id':object.id}) }}" title="Delete this entry"><span class="fa fa-trash"></span></a>
+        </td>
+    </tr>
+{% endblock %}
+
+{% block menuContentsClass ' active' %}

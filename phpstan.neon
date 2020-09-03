@@ -1,0 +1,8 @@
+parameters:
+    scopeClass: Teknoo\States\PHPStan\Analyser\Scope
+    checkGenericClassInNonGenericObjectType: false
+services:
+	-
+		class: Teknoo\States\PHPStan\MethodsClassExtension
+		tags:
+			- phpstan.broker.methodsClassReflectionExtension

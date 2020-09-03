@@ -1,0 +1,4 @@
+services:
+  GuzzleHttp\Client:
+    synthetic: true
+    public: true

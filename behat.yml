@@ -1,0 +1,14 @@
+# behat.yml
+default:
+  suites:
+    default:
+      contexts:
+        - FeatureContext:
+            kernel: '@kernel'
+            container: '@service_container'
+  extensions:
+    Behat\Symfony2Extension:
+      kernel:
+        bootstrap: features/bootstrap/bootstrap.php
+        class: App\Kernel
+        path: 'src/Kernel.php'

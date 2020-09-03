@@ -1,0 +1,21 @@
+framework:
+  #esi: ~
+  secret: '%env(APP_SECRET)%'
+  form: ~
+  csrf_protection: ~
+  error_controller: ~
+  serializer: ~
+  property_info:
+    enabled: true
+  trusted_hosts: ~
+  session:
+    # https://symfony.com/doc/current/reference/configuration/framework.html#handler-id
+    handler_id: session.handler.native_file
+    cookie_path: '/'
+    cookie_domain: ''
+    cookie_httponly: true
+    save_path: "%kernel.project_dir%/var/sessions"
+  fragments: ~
+  http_method_override: true
+  php_errors:
+    log: true

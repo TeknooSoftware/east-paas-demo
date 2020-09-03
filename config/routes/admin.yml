@@ -1,0 +1,74 @@
+admin_paas_home:
+  path: '/admin'
+  defaults: { _controller: 'teknoo.east.website.endpoint.static', 'template': '@TeknooEastWebsite/Admin/index.html.twig' }
+
+admin_paas_logout:
+  path: '/admin/logout'
+  defaults: { _controller: 'teknoo.east.website.endpoint.static', 'template': '@TeknooEastWebsite/Admin/login.html.twig' }
+
+admin_paas_login:
+  path: '/admin/login'
+  defaults: { _controller: 'teknoo.east.website.endpoint.static', 'template': '@TeknooEastWebsite/Admin/login.html.twig' }
+
+admin_paas_check:
+  path: '/admin/check'
+  defaults: { _controller: 'teknoo.east.website.endpoint.static', 'template': '@TeknooEastWebsite/Admin/index.html.twig' }
+
+admin_media_embedded_list:
+  path: '/admin/media/embedded/list'
+  methods:  ['GET']
+  defaults: { _controller: 'teknoo.east.website.endpoint.admin.list.media', viewPath: '@TeknooEastWebsite/AdminMedia/popup.html.twig' }
+
+admin_website:
+  resource: '@TeknooEastWebsiteBundle/Resources/config/admin_routing.yml'
+  prefix: '/admin'
+
+admin_account_list:
+  path: '/admin/accounts/'
+  methods:  ['GET']
+  defaults: { _controller: 'teknoo.east.paas.symfony.endpoint.admin.list.account' }
+
+admin_account_edit:
+  path: '/admin/account/edit/{id}'
+  methods:  ['GET', 'POST', 'PUT']
+  defaults: { _controller: 'teknoo.east.paas.symfony.endpoint.admin.edit.account', isTranslatable: true }
+
+admin_account_new:
+  path: '/admin/account/new'
+  methods:  ['GET', 'POST', 'PUT']
+  defaults: { _controller: 'teknoo.east.paas.symfony.endpoint.admin.new.account', editRoute: 'admin_account_edit', isTranslatable: true  }
+
+admin_account_delete:
+  path: '/admin/account/delete/{id}'
+  methods:  ['GET']
+  defaults: { _controller: 'teknoo.east.paas.symfony.endpoint.admin.delete.account', nextRoute: 'admin_account_list'}
+
+admin_project_list:
+  path: '/admin/projects/'
+  methods:  ['GET']
+  defaults: { _controller: 'teknoo.east.paas.symfony.endpoint.admin.list.project' }
+
+admin_project_edit:
+  path: '/admin/project/edit/{id}'
+  methods:  ['GET', 'POST', 'PUT']
+  defaults: { _controller: 'teknoo.east.paas.symfony.endpoint.admin.edit.project' }
+
+admin_project_new:
+  path: '/admin/project/new/{accountId}'
+  methods:  ['GET', 'POST', 'PUT']
+  defaults: { _controller: 'teknoo.east.paas.symfony.endpoint.admin.new.project', editRoute: 'admin_project_edit' }
+
+admin_project_delete:
+  path: '/admin/project/delete/{id}'
+  methods:  ['GET']
+  defaults: { _controller: 'teknoo.east.paas.symfony.endpoint.admin.delete.project', nextRoute: 'admin_project_list' }
+
+admin_job_list:
+  path: '/admin/jobs'
+  methods: ['GET']
+  defaults: { _controller: 'teknoo.east.paas.symfony.endpoint.admin.list.job' }
+
+admin_job_delete:
+  path: '/admin/job/delete/{id}'
+  methods:  ['GET']
+  defaults: { _controller: 'teknoo.east.paas.symfony.endpoint.admin.delete.job', nextRoute: 'admin_job_list' }

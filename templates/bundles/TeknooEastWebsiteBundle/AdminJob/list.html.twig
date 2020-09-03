@@ -1,0 +1,65 @@
+{# src/AdminBundle/Resources/views/Job/list.html.twig #}
+
+{% extends '@TeknooEastWebsite/Admin/list.html.twig' %}
+
+{% import _self as selfMacro %}
+{% import '@TeknooEastWebsite/Admin/utils.html.twig' as utils %}
+
+{% macro displayJobHistory(history) %}
+    {% import _self as selfMacro %}
+    <tr>
+        <td>{{ history.date|date('H:i:s') }}</td>
+        <td>{{ history.getMessage }}</td>
+        <td>{% if history.isFinal %}Final{% endif %}</td>
+    </tr>
+    {% if history.previous is not empty %}
+        {{ selfMacro.displayJobHistory(history.previous) }}
+    {% endif %}
+{% endmacro %}
+
+{% block listTitle %}
+    Jobs
+{% endblock %}
+
+{% block newButton %}{% endblock %}
+
+{% block listTableHeader %}
+    <thead>
+    <tr>
+        <th>#</th>
+        <th><a href="{{ utils.orderUrl(queryParams, 'project') }}">Project</a></th>
+        <th><a href="{{ utils.orderUrl(queryParams, 'updatedAt') }}">Updated At</a></th>
+        <th>History</th>
+        <th class="cell-action">Action</th>
+    </tr>
+    </thead>
+{% endblock %}
+
+{% block listTableEmpty %}
+    <tr>
+        <td colspan="5">No entries found</td>
+    </tr>
+{% endblock %}
+
+{% block listTableRow %}
+    <tr>
+        <td>{{ object.id|slice(0, 10) }}</td>
+        <td>{{ object.project }}<br/>{% if object.project is not empty %}{{ object.project.account }}{% endif %}</td>
+        <td>{{ object.updatedAt|date('Y M d H:i:s') }}</td>
+        <td>
+            <table class="jobs-history">
+                {% if object.history is not empty %}
+                    {{ selfMacro.displayJobHistory(object.history) }}
+                {% endif %}
+            </table>
+        </td>
+        <td>
+            {% if object.project is not empty %}
+            <a href="{{  path('admin_project_edit', {'id':object.project.id}) }}" title="Go to project"><span class="fa fa-pencil"></span></a>
+            {% endif %}
+            <a href="{{  path('admin_job_delete', {'id':object.id}) }}" title="Delete this entry"><span class="fa fa-trash"></span></a>
+        </td>
+    </tr>
+{% endblock %}
+
+{% block menuJobsClass ' active' %}

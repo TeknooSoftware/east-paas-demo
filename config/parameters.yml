@@ -1,0 +1,5 @@
+parameters:
+  languages:
+    - 'fr'
+    - 'en'
+  teknoo.east.website.languages: '%languages%'

@@ -1,0 +1,40 @@
+{# app/Resources/TeknooEastWebsiteBundle/views/AdminContent/new.html.twig #}
+
+{% extends '@TeknooEastWebsite/Admin/form.html.twig' %}
+
+{% block formTitle 'New content' %}
+
+{% block crudFormFields %}
+    {{ form_errors(formView) }}
+    <div class="form-group row">
+        {{ form_row(formView.title, {"largeRow": true}) }}
+    </div>
+    <div class="form-group row">
+        {{ form_row(formView.subtitle, {"largeRow": true}) }}
+    </div>
+    <div class="form-group row">
+        {{ form_row(formView.type) }}
+        {{ form_row(formView.slug) }}
+    </div>
+    <div class="form-group row">
+        {{ form_row(formView.author, {"largeRow": true}) }}
+    </div>
+    <div class="form-group row">
+        {{ form_row(formView.publishedAt) }}
+        {{ form_row(formView.description) }}
+    </div>
+    {% if objectInstance is defined and objectInstance.type is not empty %}
+        {% set type = objectInstance.type %}
+        {% for block in type.blocks %}
+            {% set blockName = block.name %}
+            <div class="form-group row">
+                {{ form_row(attribute(formView, blockName), {"largeRow": true, 'attr': {'rows':10, 'class':'rich-text form-control', 'data-media-list':path('admin_media_embedded_list')}}) }}
+            </div>
+        {% endfor %}
+    {% endif %}
+    <div class="form-group row">
+        {{ form_rest(formView) }}
+    </div>
+{% endblock %}
+
+{% block menuContentsClass ' active' %}

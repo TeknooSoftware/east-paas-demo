@@ -1,0 +1,50 @@
+{# app/Resources/TeknooEastWebsiteBundle/views/AdminMedia/list.html.twig #}
+
+{% extends '@TeknooEastWebsite/Admin/list.html.twig' %}
+
+{% import '@TeknooEastWebsite/Admin/utils.html.twig' as utils %}
+
+{% block listTitle %}
+    Media
+{% endblock %}
+
+{% block newButton %}
+    <a class="btn btn-dark" href="{{ path('_teknoo_website_admin_media_new') }}" title="Create a new media">New</a>
+{% endblock %}
+
+{% block listTableHeader %}
+    <thead>
+    <tr>
+        <th class="cell-id">#</th>
+        <th><a href="{{ utils.orderUrl(queryParams, 'name') }}">Name</a></th>
+        <th>Alternative</th>
+        <th>Mime Type</th>
+        <th>Image</th>
+        <th class="cell-action">Action</th>
+    </tr>
+    </thead>
+{% endblock %}
+
+{% block listTableEmpty %}
+    <tr>
+        <td colspan="6">No entries found</td>
+    </tr>
+{% endblock %}
+
+{% block listTableRow %}
+    <tr>
+        <td>{{ object.id }}</td>
+        <td>{% if object.metadata is not empty %}{{ object.metadata.fileName }}{% else %}{{ object.name }}{% endif %}</td>
+        <td>{% if object.metadata is not empty %}{{ object.metadata.alternative }}{% endif %}</td>
+        <td>{% if object.metadata is not empty %}{{ object.metadata.contentType }}{% endif %}</td>
+        <td>{% if object.metadata is empty or 'application/pdf' != object.metadata.contentType %}<img class="img img-dynamic" src="{{ path('_teknoo_website_media', {'id':object.id}) }}" alt="{% if object.metadata is not empty %}{{ object.metadata.alternative }}{% endif %}"/>{% endif %}</td>
+        <td>
+            <a href="{{  path('_teknoo_website_media', {'id':object.id}) }}" target="_blank" title="Open this entry"><span class="fa fa-folder-open"></span></a>
+            {% if 24 == object.id|length %}
+            <a href="{{  path('_teknoo_website_admin_media_delete', {'id':object.id}) }}" title="Delete this entry"><span class="fa fa-trash"></span></a>
+            {% endif %}
+        </td>
+    </tr>
+{% endblock %}
+
+{% block menuMediaClass ' active' %}

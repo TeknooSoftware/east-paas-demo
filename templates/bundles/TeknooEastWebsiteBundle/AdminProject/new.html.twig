@@ -1,0 +1,55 @@
+{# src/AdminBundle/Resources/views/Project/new.html.twig #}
+
+{% extends '@TeknooEastWebsite/Admin/form.html.twig' %}
+
+{% block formTitle 'New project' %}
+
+{% block crudFormFields %}
+    {{ form_errors(formView) }}
+    <div class="form-group row">
+        {{ form_row(formView.name, {"largeRow": true}) }}
+    </div>
+    <div class="form-group">
+        <hr/>
+        <h3>Git</h3>
+        <div class="form-group row">
+            {{ form_row(formView.sourceRepository.pullUrl, {"colClass": "col-sm-8 mb-3"}) }}
+            <div class="col-sm-1"></div>
+            {{ form_row(formView.sourceRepository.defaultBranch, {"colClass": "col-sm-8 mb-3"}) }}
+            <div class="col-sm-1"></div>
+            {{ form_row(formView.sourceRepository.identity.name, {"colClass": "col-sm-8 mb-3"}) }}
+            <div class="col-sm-1"></div>
+            {{ form_row(formView.sourceRepository.identity.privateKey, {"colClass": "col-sm-8 mb-3"}) }}
+        </div>
+    </div>
+    <div class="form-group">
+        <hr/>
+        <h3>Docker</h3>
+        <div class="form-group row">
+            {{ form_row(formView.imagesRepository.apiUrl, {"colClass": "col-sm-8 mb-3"}) }}
+            <div class="col-sm-1"></div>
+            {{ form_row(formView.imagesRepository.name, {"colClass": "col-sm-3 mb-3"}) }}
+            {{ form_row(formView.imagesRepository.identity.username, {"colClass": "col-sm-3 mb-3"}) }}
+            <div class="col-sm-1"></div>
+            {{ form_row(formView.imagesRepository.identity.password, {"colClass": "col-sm-3 mb-3"}) }}
+            {{ form_row(formView.imagesRepository.identity.email, {"colClass": "col-sm-3 mb-3"}) }}
+            <div class="col-sm-1"></div>
+            {{ form_row(formView.imagesRepository.identity.auth, {"colClass": "col-sm-3 mb-3"}) }}
+            {{ form_row(formView.imagesRepository.identity.serverAddress, {"colClass": "col-sm-3 mb-3"}) }}
+        </div>
+    </div>
+    <div class="form-group">
+        <hr/>
+        <h3>Clusters <a class="btn btn-secondary btn-add-subform" data-subform="clusters-list" href="#">Add</a></h3>
+        <ul id="clusters-list" class="form-subform-list"
+            data-prototype="{{ form_widget(formView.clusters.vars.prototype)|e }}"
+            data-widget-tags="{{ '<li></li>'|e }}">
+            {% for clusterSubForm in formView.clusters %}
+                {{ form_widget(clusterSubForm) }}
+            {% endfor %}
+        </ul>
+    </div>
+    {% do formView.clusters.setRendered %}
+{% endblock %}
+
+{% block menuProjectsClass ' active' %}

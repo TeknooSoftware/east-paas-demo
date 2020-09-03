@@ -1,0 +1,26 @@
+{# app/Resources/TeknooEastWebsiteBundle/views/AdminItem/edit.html.twig #}
+
+{% extends '@TeknooEastWebsite/Admin/form.html.twig' %}
+
+{% block formTitle 'Editing item' %}
+
+{% block crudFormFields %}
+    {{ form_errors(formView) }}
+    <div class="form-group row">
+        {{ form_row(formView.name, {"largeRow": true}) }}
+    </div>
+    <div class="form-group row">
+        {{ form_row(formView.location) }}
+        {{ form_row(formView.parent) }}
+    </div>
+    <div class="form-group row">
+        {{ form_row(formView.slug) }}
+        {{ form_row(formView.position) }}
+    </div>
+    <div class="form-group row">
+        {{ form_row(formView.hidden) }}
+        {{ form_row(formView.content) }}
+    </div>
+{% endblock %}
+
+{% block menuItemsClass ' active' %}
