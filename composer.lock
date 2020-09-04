@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "888492ae95b29f9651cf2aeb3c556106",
+    "content-hash": "d475aa1acca809840aaa584a653d27fd",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -8794,16 +8794,16 @@
         },
         {
             "name": "teknoo/east-paas",
-            "version": "0.0.3",
+            "version": "0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TeknooSoftware/east-paas.git",
-                "reference": "12bb74d4b7e0512f0a7ca5bde19ae4cdd7b1b4f2"
+                "reference": "0d3d268f02c09d19caf9f1a6697e81375ad15c74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TeknooSoftware/east-paas/zipball/12bb74d4b7e0512f0a7ca5bde19ae4cdd7b1b4f2",
-                "reference": "12bb74d4b7e0512f0a7ca5bde19ae4cdd7b1b4f2",
+                "url": "https://api.github.com/repos/TeknooSoftware/east-paas/zipball/0d3d268f02c09d19caf9f1a6697e81375ad15c74",
+                "reference": "0d3d268f02c09d19caf9f1a6697e81375ad15c74",
                 "shasum": ""
             },
             "require": {
@@ -8886,9 +8886,11 @@
                 "ci",
                 "continuous delivery",
                 "docker",
+                "heroku",
                 "kubernetes",
                 "paas",
                 "platform",
+                "platform.sh",
                 "service"
             ],
             "funding": [
@@ -8897,20 +8899,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-09-03T14:36:01+00:00"
+            "time": "2020-09-04T12:52:34+00:00"
         },
         {
             "name": "teknoo/east-website",
-            "version": "3.0.10",
+            "version": "3.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TeknooSoftware/east-website.git",
-                "reference": "2bcf7a2fb857fe64b33094d1b06432c65e9965d4"
+                "reference": "217183734066b88e89201a480776278c59a584bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TeknooSoftware/east-website/zipball/2bcf7a2fb857fe64b33094d1b06432c65e9965d4",
-                "reference": "2bcf7a2fb857fe64b33094d1b06432c65e9965d4",
+                "url": "https://api.github.com/repos/TeknooSoftware/east-website/zipball/217183734066b88e89201a480776278c59a584bb",
+                "reference": "217183734066b88e89201a480776278c59a584bb",
                 "shasum": ""
             },
             "require": {
@@ -8976,7 +8978,7 @@
                     "role": "Software architect, Lead developer"
                 }
             ],
-            "description": "East package to run a basic website",
+            "description": "Universal package, following the #East programming philosophy, build on Teknoo/East-Foundation (and Teknoo/Recipe), and implementing a basic CMS to display dynamics pages with different types and templates.",
             "homepage": "http://teknoo.software/website",
             "keywords": [
                 "East",
@@ -8989,7 +8991,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-08-25T12:28:34+00:00"
+            "time": "2020-09-04T10:02:28+00:00"
         },
         {
             "name": "teknoo/immutable",
