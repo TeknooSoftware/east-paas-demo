@@ -92,8 +92,14 @@
     "guzzlehttp/psr7": {
         "version": "1.4.2"
     },
+    "illuminate/collections": {
+        "version": "v8.0.3"
+    },
     "illuminate/contracts": {
         "version": "v5.7.11"
+    },
+    "illuminate/macroable": {
+        "version": "v8.0.3"
     },
     "illuminate/support": {
         "version": "v5.7.11"
@@ -492,9 +498,6 @@
         "version": "v4.1.6"
     },
     "symfony/property-info": {
-        "version": "v4.1.6"
-    },
-    "symfony/proxy-manager-bridge": {
         "version": "v4.1.6"
     },
     "symfony/psr-http-message-bridge": {

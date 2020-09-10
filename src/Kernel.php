@@ -24,13 +24,13 @@ declare(strict_types=1);
 
 namespace App;
 
-use DI\Bridge\Symfony\Kernel as BaseKernel;
 use DI\ContainerBuilder as DIContainerBuilder;
 use Doctrine\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\Config\Resource\FileResource;
 use Symfony\Component\DependencyInjection\ContainerBuilder as SfContainerBuilder;
+use Symfony\Component\HttpKernel\Kernel as BaseKernel;
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 
 use function DI\get;
@@ -59,42 +59,6 @@ class Kernel extends BaseKernel
                 yield new $class();
             }
         }
-    }
-    
-    protected function buildPHPDIContainer(DIContainerBuilder $builder)
-    {
-        // Configure your container here
-        $rootPath = dirname(__DIR__);
-        $vendorPath = $rootPath . '/vendor';
-        $builder->addDefinitions($vendorPath . '/teknoo/east-foundation/src/di.php');
-        $builder->addDefinitions(
-            $vendorPath . '/teknoo/east-foundation/infrastructures/symfony/Resources/config/di.php'
-        );
-        $builder->addDefinitions($vendorPath . '/teknoo/east-website/src/di.php');
-        $builder->addDefinitions($vendorPath . '/teknoo/east-website/infrastructures/doctrine/di.php');
-        $builder->addDefinitions(
-            $vendorPath . '/teknoo/east-website/infrastructures/symfony/Resources/config/di.php'
-        );
-        $builder->addDefinitions($vendorPath . '/teknoo/east-website/infrastructures/di.php');
-        $builder->addDefinitions($vendorPath . '/teknoo/east-paas/src/di.php');
-        $builder->addDefinitions($vendorPath . '/teknoo/east-paas/infrastructures/Doctrine/di.php');
-        $builder->addDefinitions($vendorPath . '/teknoo/east-paas/infrastructures/Flysystem/di.php');
-        $builder->addDefinitions($vendorPath . '/teknoo/east-paas/infrastructures/Git/di.php');
-        $builder->addDefinitions($vendorPath . '/teknoo/east-paas/infrastructures/Kubernetes/di.php');
-        $builder->addDefinitions($vendorPath . '/teknoo/east-paas/infrastructures/Docker/di.php');
-        $builder->addDefinitions($vendorPath . '/teknoo/east-paas/infrastructures/Composer/di.php');
-        $builder->addDefinitions($vendorPath . '/teknoo/east-paas/infrastructures/Symfony/Components/di.php');
-        $builder->addDefinitions($rootPath . '/config/di.php');
-        $builder->addDefinitions([ObjectManager::class => get('doctrine_mongodb.odm.default_document_manager')]);
-
-        $builder->addDefinitions([
-            'teknoo.east.paas.worker.global_variables' => [
-                'ROOT' => \dirname(__DIR__)
-            ],
-            ObjectManager::class => get('doctrine_mongodb.odm.default_document_manager'),
-        ]);
-
-        return $builder->build();
     }
 
     protected function configureContainer(SfContainerBuilder $container, LoaderInterface $loader): void

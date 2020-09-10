@@ -60,6 +60,10 @@ return [
         return 'https://' . $container->get('app.paas.hostname') . '/project/{projectId}/environment/{envName}/job/{jobId}/log';
     },
 
+    'teknoo.east.paas.worker.global_variables' => [
+        'ROOT' => \dirname(__DIR__)
+    ],
+
     HostnameRedirectionMiddleware::class => function (ContainerInterface $container): HostnameRedirectionMiddleware {
         return new HostnameRedirectionMiddleware($container->get('app.paas.hostname'));
     },
