@@ -620,11 +620,17 @@
     "teknoo/east-foundation": {
         "version": "0.0.9"
     },
+    "teknoo/east-foundation-symfony": {
+        "version": "3.0.6"
+    },
     "teknoo/east-paas": {
         "version": "dev-master"
     },
     "teknoo/east-website": {
         "version": "0.0.12"
+    },
+    "teknoo/east-website-symfony": {
+        "version": "3.1.1"
     },
     "teknoo/immutable": {
         "version": "1.0.0"

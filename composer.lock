@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "41d3bf2d3e7fe612dcf69b5a50e63b30",
+    "content-hash": "94b1398564b34a77aff908bbf3507a41",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -2563,16 +2563,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.39.1",
+            "version": "2.39.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "7af467873250583cc967a59ee9df29fabab193c1"
+                "reference": "326efde1bc09077a26cb77f6e2e32e13f06c27f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/7af467873250583cc967a59ee9df29fabab193c1",
-                "reference": "7af467873250583cc967a59ee9df29fabab193c1",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/326efde1bc09077a26cb77f6e2e32e13f06c27f2",
+                "reference": "326efde1bc09077a26cb77f6e2e32e13f06c27f2",
                 "shasum": ""
             },
             "require": {
@@ -2648,7 +2648,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-04T13:11:37+00:00"
+            "time": "2020-09-10T12:16:42+00:00"
         },
         {
             "name": "nette/utils",
@@ -8840,6 +8840,65 @@
             "time": "2020-09-10T08:16:23+00:00"
         },
         {
+            "name": "teknoo/east-foundation-symfony",
+            "version": "3.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TeknooSoftware/east-foundation-symfony.git",
+                "reference": "52069426c83f5adb65f4831ad3a2625d88bf370f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TeknooSoftware/east-foundation-symfony/zipball/52069426c83f5adb65f4831ad3a2625d88bf370f",
+                "reference": "52069426c83f5adb65f4831ad3a2625d88bf370f",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-diactoros": "~2.2",
+                "symfony/config": "~4.4||~5.1",
+                "symfony/console": "~4.4||~5.1",
+                "symfony/dependency-injection": "~4.4||~5.1",
+                "symfony/http-foundation": "~4.4||~5.1",
+                "symfony/http-kernel": "~4.4||~5.1",
+                "symfony/psr-http-message-bridge": "~1.3||~2.0",
+                "symfony/routing": "~4.4||~5.1",
+                "symfony/security-core": "~4.4||~5.1",
+                "symfony/serializer": "~4.4||~5.1",
+                "symfony/yaml": "~4.4||~5.1",
+                "teknoo/bridge-phpdi-symfony": "^4.0.0",
+                "teknoo/east-foundation": "^3.0.4"
+            },
+            "require-dev": {
+                "roave/security-advisories": "dev-master"
+            },
+            "type": "metapackage",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Richard Déloge",
+                    "email": "richarddeloge@gmail.com",
+                    "role": "Software architect, Lead developer"
+                }
+            ],
+            "description": "Metapackage to install Teknoo East Foundation in Symfony : East Foundation is a universal package to implement the #east philosophy ( http://blog.est.voyage/phpTour2015/ ) with any framework supporting PSR-11 or with Symfony 4+.",
+            "homepage": "http://teknoo.software/east-framework",
+            "keywords": [
+                "East",
+                "controller",
+                "design"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/teknoo_software",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-09-10T20:16:37+00:00"
+        },
+        {
             "name": "teknoo/east-paas",
             "version": "0.0.5",
             "source": {
@@ -9039,6 +9098,69 @@
                 }
             ],
             "time": "2020-09-10T07:57:40+00:00"
+        },
+        {
+            "name": "teknoo/east-website-symfony",
+            "version": "3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TeknooSoftware/east-website-symfony.git",
+                "reference": "2f1f6201d0903da5574cf9a26afd60dc824c1125"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TeknooSoftware/east-website-symfony/zipball/2f1f6201d0903da5574cf9a26afd60dc824c1125",
+                "reference": "2f1f6201d0903da5574cf9a26afd60dc824c1125",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/common": "~2.13",
+                "doctrine/mongodb-odm": "~2.1",
+                "doctrine/mongodb-odm-bundle": "~4.2",
+                "ext-mongodb": "*",
+                "ext-simplexml": "*",
+                "laminas/laminas-diactoros": "~2.2",
+                "symfony/console": "~4.4||~5.1",
+                "symfony/form": "~4.4||~5.1",
+                "symfony/http-kernel": "~4.4||~5.1",
+                "symfony/psr-http-message-bridge": "~2.0",
+                "symfony/security-core": "~4.4||~5.1",
+                "symfony/templating": "~4.4||~5.1",
+                "symfony/yaml": "~4.4||~5.1",
+                "teknoo/bridge-phpdi-symfony": "^4.0.0",
+                "teknoo/east-foundation-symfony": "^3.0.4",
+                "teknoo/east-website": "~3.1",
+                "twig/twig": "~2.0||~3.0"
+            },
+            "require-dev": {
+                "roave/security-advisories": "dev-master"
+            },
+            "type": "metapackage",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Richard Déloge",
+                    "email": "richarddeloge@gmail.com",
+                    "role": "Software architect, Lead developer"
+                }
+            ],
+            "description": "Metapackage to install Teknoo East Website in Symfony, Package following the #East programming philosophy, build on Teknoo/East-Foundation (and Teknoo/Recipe), and implementing a basic CMS to display dynamics pages with different types and templates.",
+            "homepage": "http://teknoo.software/website",
+            "keywords": [
+                "East",
+                "cms",
+                "website"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/teknoo_software",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-09-10T20:16:46+00:00"
         },
         {
             "name": "teknoo/immutable",
