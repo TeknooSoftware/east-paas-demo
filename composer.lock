@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "94b1398564b34a77aff908bbf3507a41",
+    "content-hash": "eaf13d77d910c9f5638ff8517443f42c",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -1048,16 +1048,16 @@
         },
         {
             "name": "doctrine/mongodb-odm-bundle",
-            "version": "4.2.1",
+            "version": "4.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineMongoDBBundle.git",
-                "reference": "1d02d49707954aca9ba4a81447a8bdb5b4d75e5a"
+                "reference": "4b15b52101481c8767c8c17a5480596804416e32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineMongoDBBundle/zipball/1d02d49707954aca9ba4a81447a8bdb5b4d75e5a",
-                "reference": "1d02d49707954aca9ba4a81447a8bdb5b4d75e5a",
+                "url": "https://api.github.com/repos/doctrine/DoctrineMongoDBBundle/zipball/4b15b52101481c8767c8c17a5480596804416e32",
+                "reference": "4b15b52101481c8767c8c17a5480596804416e32",
                 "shasum": ""
             },
             "require": {
@@ -1125,7 +1125,7 @@
                 "persistence",
                 "symfony"
             ],
-            "time": "2020-08-29T11:42:32+00:00"
+            "time": "2020-09-17T06:59:25+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -1636,22 +1636,25 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v8.0.3",
+            "version": "v8.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "446310d53bf58905bf2fb0152d9df9a169fc3aa9"
+                "reference": "28957388487b675b730ed8cb4e5f8ee5cd4b4d1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/446310d53bf58905bf2fb0152d9df9a169fc3aa9",
-                "reference": "446310d53bf58905bf2fb0152d9df9a169fc3aa9",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/28957388487b675b730ed8cb4e5f8ee5cd4b4d1d",
+                "reference": "28957388487b675b730ed8cb4e5f8ee5cd4b4d1d",
                 "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "^8.0",
                 "illuminate/macroable": "^8.0",
                 "php": "^7.3"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Required to use the dump method (^5.1)."
             },
             "type": "library",
             "extra": {
@@ -1679,20 +1682,20 @@
             ],
             "description": "The Illuminate Collections package.",
             "homepage": "https://laravel.com",
-            "time": "2020-09-08T12:37:36+00:00"
+            "time": "2020-09-12T21:29:53+00:00"
         },
         {
             "name": "illuminate/contracts",
-            "version": "v8.0.3",
+            "version": "v8.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "8420ad4a55c85a106d560408239fd72a64057df6"
+                "reference": "37ec3d86c2761628957b6d762ecd3bd27da754bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/8420ad4a55c85a106d560408239fd72a64057df6",
-                "reference": "8420ad4a55c85a106d560408239fd72a64057df6",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/37ec3d86c2761628957b6d762ecd3bd27da754bd",
+                "reference": "37ec3d86c2761628957b6d762ecd3bd27da754bd",
                 "shasum": ""
             },
             "require": {
@@ -1723,11 +1726,11 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-            "time": "2020-09-08T11:21:59+00:00"
+            "time": "2020-09-16T13:57:35+00:00"
         },
         {
             "name": "illuminate/macroable",
-            "version": "v8.0.3",
+            "version": "v8.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -1769,16 +1772,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v8.0.3",
+            "version": "v8.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "a7499132c366cf1c8ddfe6f26bba603767b1b560"
+                "reference": "30c044d0b629249e942e65e315745e082869db44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/a7499132c366cf1c8ddfe6f26bba603767b1b560",
-                "reference": "a7499132c366cf1c8ddfe6f26bba603767b1b560",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/30c044d0b629249e942e65e315745e082869db44",
+                "reference": "30c044d0b629249e942e65e315745e082869db44",
                 "shasum": ""
             },
             "require": {
@@ -1800,7 +1803,7 @@
                 "ramsey/uuid": "Required to use Str::uuid() (^4.0).",
                 "symfony/process": "Required to use the composer class (^5.1).",
                 "symfony/var-dumper": "Required to use the dd function (^5.1).",
-                "vlucas/phpdotenv": "Required to use the Env class and env helper (^5.0)."
+                "vlucas/phpdotenv": "Required to use the Env class and env helper (^5.2)."
             },
             "type": "library",
             "extra": {
@@ -1828,7 +1831,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2020-09-09T15:54:22+00:00"
+            "time": "2020-09-16T13:35:47+00:00"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1883,24 +1886,24 @@
         },
         {
             "name": "jean85/pretty-package-versions",
-            "version": "1.5.0",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jean85/pretty-package-versions.git",
-                "reference": "e9f4324e88b8664be386d90cf60fbc202e1f7fc9"
+                "reference": "a917488320c20057da87f67d0d40543dd9427f7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jean85/pretty-package-versions/zipball/e9f4324e88b8664be386d90cf60fbc202e1f7fc9",
-                "reference": "e9f4324e88b8664be386d90cf60fbc202e1f7fc9",
+                "url": "https://api.github.com/repos/Jean85/pretty-package-versions/zipball/a917488320c20057da87f67d0d40543dd9427f7a",
+                "reference": "a917488320c20057da87f67d0d40543dd9427f7a",
                 "shasum": ""
             },
             "require": {
                 "composer/package-versions-deprecated": "^1.8.0",
-                "php": "^7.0"
+                "php": "^7.0|^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.0"
+                "phpunit/phpunit": "^6.0|^8.5|^9.2"
             },
             "type": "library",
             "extra": {
@@ -1930,7 +1933,7 @@
                 "release",
                 "versions"
             ],
-            "time": "2020-06-23T06:23:06+00:00"
+            "time": "2020-09-14T08:43:34+00:00"
         },
         {
             "name": "laminas/laminas-code",
@@ -2150,16 +2153,16 @@
         },
         {
             "name": "laminas/laminas-zendframework-bridge",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
-                "reference": "4939c81f63a8a4968c108c440275c94955753b19"
+                "reference": "6ede70583e101030bcace4dcddd648f760ddf642"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/4939c81f63a8a4968c108c440275c94955753b19",
-                "reference": "4939c81f63a8a4968c108c440275c94955753b19",
+                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/6ede70583e101030bcace4dcddd648f760ddf642",
+                "reference": "6ede70583e101030bcace4dcddd648f760ddf642",
                 "shasum": ""
             },
             "require": {
@@ -2171,10 +2174,6 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev",
-                    "dev-develop": "1.1.x-dev"
-                },
                 "laminas": {
                     "module": "Laminas\\ZendFrameworkBridge"
                 }
@@ -2204,7 +2203,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-08-18T16:34:51+00:00"
+            "time": "2020-09-14T14:23:00+00:00"
         },
         {
             "name": "league/flysystem",
@@ -2563,16 +2562,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.39.2",
+            "version": "2.40.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "326efde1bc09077a26cb77f6e2e32e13f06c27f2"
+                "reference": "6c7646154181013ecd55e80c201b9fd873c6ee5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/326efde1bc09077a26cb77f6e2e32e13f06c27f2",
-                "reference": "326efde1bc09077a26cb77f6e2e32e13f06c27f2",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/6c7646154181013ecd55e80c201b9fd873c6ee5d",
+                "reference": "6c7646154181013ecd55e80c201b9fd873c6ee5d",
                 "shasum": ""
             },
             "require": {
@@ -2648,7 +2647,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-10T12:16:42+00:00"
+            "time": "2020-09-11T19:00:58+00:00"
         },
         {
             "name": "nette/utils",
@@ -3557,24 +3556,24 @@
         },
         {
             "name": "react/cache",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/cache.git",
-                "reference": "aa10d63a1b40a36a486bdf527f28bac607ee6466"
+                "reference": "44a568925556b0bd8cacc7b49fb0f1cf0d706a0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/cache/zipball/aa10d63a1b40a36a486bdf527f28bac607ee6466",
-                "reference": "aa10d63a1b40a36a486bdf527f28bac607ee6466",
+                "url": "https://api.github.com/repos/reactphp/cache/zipball/44a568925556b0bd8cacc7b49fb0f1cf0d706a0c",
+                "reference": "44a568925556b0bd8cacc7b49fb0f1cf0d706a0c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
-                "react/promise": "~2.0|~1.1"
+                "react/promise": "^3.0 || ^2.0 || ^1.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.4 || ^5.7 || ^4.8.35"
+                "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.35"
             },
             "type": "library",
             "autoload": {
@@ -3586,6 +3585,28 @@
             "license": [
                 "MIT"
             ],
+            "authors": [
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@clue.engineering",
+                    "homepage": "https://clue.engineering/"
+                },
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "reactphp@ceesjankiewiet.nl",
+                    "homepage": "https://wyrihaximus.net/"
+                },
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@gmail.com",
+                    "homepage": "https://sorgalla.com/"
+                },
+                {
+                    "name": "Chris Boden",
+                    "email": "cboden@gmail.com",
+                    "homepage": "https://cboden.dev/"
+                }
+            ],
             "description": "Async, Promise-based cache interface for ReactPHP",
             "keywords": [
                 "cache",
@@ -3593,20 +3614,30 @@
                 "promise",
                 "reactphp"
             ],
-            "time": "2019-07-11T13:45:28+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/WyriHaximus",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/clue",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-18T12:12:35+00:00"
         },
         {
             "name": "react/dns",
-            "version": "v1.3.0",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/dns.git",
-                "reference": "89d83794e959ef3e0f1ab792f070b0157de1abf2"
+                "reference": "665260757171e2ab17485b44e7ffffa7acb6ca1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/dns/zipball/89d83794e959ef3e0f1ab792f070b0157de1abf2",
-                "reference": "89d83794e959ef3e0f1ab792f070b0157de1abf2",
+                "url": "https://api.github.com/repos/reactphp/dns/zipball/665260757171e2ab17485b44e7ffffa7acb6ca1f",
+                "reference": "665260757171e2ab17485b44e7ffffa7acb6ca1f",
                 "shasum": ""
             },
             "require": {
@@ -3618,7 +3649,7 @@
             },
             "require-dev": {
                 "clue/block-react": "^1.2",
-                "phpunit/phpunit": "^9.0 || ^4.8.35"
+                "phpunit/phpunit": "^9.3 || ^4.8.35"
             },
             "type": "library",
             "autoload": {
@@ -3630,6 +3661,28 @@
             "license": [
                 "MIT"
             ],
+            "authors": [
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@clue.engineering",
+                    "homepage": "https://clue.engineering/"
+                },
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "reactphp@ceesjankiewiet.nl",
+                    "homepage": "https://wyrihaximus.net/"
+                },
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@gmail.com",
+                    "homepage": "https://sorgalla.com/"
+                },
+                {
+                    "name": "Chris Boden",
+                    "email": "cboden@gmail.com",
+                    "homepage": "https://cboden.dev/"
+                }
+            ],
             "description": "Async DNS resolver for ReactPHP",
             "keywords": [
                 "async",
@@ -3637,7 +3690,17 @@
                 "dns-resolver",
                 "reactphp"
             ],
-            "time": "2020-07-10T12:12:50+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/WyriHaximus",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/clue",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-18T12:12:55+00:00"
         },
         {
             "name": "react/event-loop",
@@ -5084,16 +5147,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.9.3",
+            "version": "v1.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "1eab1e85f5eb66dac138d6240cc0ceffd6e3ae34"
+                "reference": "115e67f76ba95d70946a6e0b15d4578bf04927c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/1eab1e85f5eb66dac138d6240cc0ceffd6e3ae34",
-                "reference": "1eab1e85f5eb66dac138d6240cc0ceffd6e3ae34",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/115e67f76ba95d70946a6e0b15d4578bf04927c3",
+                "reference": "115e67f76ba95d70946a6e0b15d4578bf04927c3",
                 "shasum": ""
             },
             "require": {
@@ -5143,7 +5206,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-31T14:36:07+00:00"
+            "time": "2020-09-14T14:58:36+00:00"
         },
         {
             "name": "symfony/form",
@@ -8686,16 +8749,16 @@
         },
         {
             "name": "teknoo/bridge-phpdi-symfony",
-            "version": "4.0.0",
+            "version": "4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TeknooSoftware/symfony-bridge.git",
-                "reference": "e209649202ce65bb9f44c5f5208a98cb96b5a7cc"
+                "reference": "c2648a72fe26aa73fb57764b47694a4ffffd7513"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TeknooSoftware/symfony-bridge/zipball/e209649202ce65bb9f44c5f5208a98cb96b5a7cc",
-                "reference": "e209649202ce65bb9f44c5f5208a98cb96b5a7cc",
+                "url": "https://api.github.com/repos/TeknooSoftware/symfony-bridge/zipball/c2648a72fe26aa73fb57764b47694a4ffffd7513",
+                "reference": "c2648a72fe26aa73fb57764b47694a4ffffd7513",
                 "shasum": ""
             },
             "require": {
@@ -8744,7 +8807,7 @@
                     "role": "Original author before fork"
                 }
             ],
-            "description": "Integrates PHP-DI to Symfony, Fork from php-di/symfony-bridge",
+            "description": "Userfriendly integration of PHP-DI with Symfony, Fork from php-di/symfony-bridge",
             "homepage": "http://teknoo.software/bridge-phpdi-symfony",
             "keywords": [
                 "Bridge",
@@ -8752,20 +8815,26 @@
                 "phpdi",
                 "symfony"
             ],
-            "time": "2020-09-10T07:47:57+00:00"
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/teknoo_software",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-09-18T07:29:09+00:00"
         },
         {
             "name": "teknoo/east-foundation",
-            "version": "3.0.4",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TeknooSoftware/east-foundation.git",
-                "reference": "6da873b6b04d18182d7de08337771125c9d683b8"
+                "reference": "260f97d21d975e7d4ed42226ad7fd249cd8e5606"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TeknooSoftware/east-foundation/zipball/6da873b6b04d18182d7de08337771125c9d683b8",
-                "reference": "6da873b6b04d18182d7de08337771125c9d683b8",
+                "url": "https://api.github.com/repos/TeknooSoftware/east-foundation/zipball/260f97d21d975e7d4ed42226ad7fd249cd8e5606",
+                "reference": "260f97d21d975e7d4ed42226ad7fd249cd8e5606",
                 "shasum": ""
             },
             "require": {
@@ -8789,8 +8858,12 @@
                 "roave/security-advisories": "dev-master",
                 "sebastian/phpcpd": "~6.0",
                 "squizlabs/php_codesniffer": "~3.5",
+                "symfony/config": "~4.4||~5.1",
                 "symfony/console": "~4.4||~5.1",
+                "symfony/dependency-injection": "~4.4||~5.1",
                 "symfony/framework-bundle": "~4.4||~5.1",
+                "symfony/http-foundation": "~4.4||~5.1",
+                "symfony/http-kernel": "~4.4||~5.1",
                 "symfony/psr-http-message-bridge": "~1.3||~2.0",
                 "symfony/routing": "~4.4||~5.1",
                 "symfony/security-core": "~4.4||~5.1",
@@ -8837,20 +8910,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-09-10T08:16:23+00:00"
+            "time": "2020-09-18T07:20:34+00:00"
         },
         {
             "name": "teknoo/east-foundation-symfony",
-            "version": "3.0.6",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TeknooSoftware/east-foundation-symfony.git",
-                "reference": "52069426c83f5adb65f4831ad3a2625d88bf370f"
+                "reference": "17ab98adb41df4c6b14fae80dadc029c587fb921"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TeknooSoftware/east-foundation-symfony/zipball/52069426c83f5adb65f4831ad3a2625d88bf370f",
-                "reference": "52069426c83f5adb65f4831ad3a2625d88bf370f",
+                "url": "https://api.github.com/repos/TeknooSoftware/east-foundation-symfony/zipball/17ab98adb41df4c6b14fae80dadc029c587fb921",
+                "reference": "17ab98adb41df4c6b14fae80dadc029c587fb921",
                 "shasum": ""
             },
             "require": {
@@ -8865,8 +8938,8 @@
                 "symfony/security-core": "~4.4||~5.1",
                 "symfony/serializer": "~4.4||~5.1",
                 "symfony/yaml": "~4.4||~5.1",
-                "teknoo/bridge-phpdi-symfony": "^4.0.0",
-                "teknoo/east-foundation": "^3.0.4"
+                "teknoo/bridge-phpdi-symfony": "^4.0.2",
+                "teknoo/east-foundation": "^3.1.2"
             },
             "require-dev": {
                 "roave/security-advisories": "dev-master"
@@ -8896,20 +8969,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-09-10T20:16:37+00:00"
+            "time": "2020-09-18T10:35:32+00:00"
         },
         {
             "name": "teknoo/east-paas",
-            "version": "0.0.5",
+            "version": "0.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TeknooSoftware/east-paas.git",
-                "reference": "074a8a61d9d8e65e6e79e21ec720274d1bb3519b"
+                "reference": "81c4682ca6c68a3c535987f2240eb420f8f97d37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TeknooSoftware/east-paas/zipball/074a8a61d9d8e65e6e79e21ec720274d1bb3519b",
-                "reference": "074a8a61d9d8e65e6e79e21ec720274d1bb3519b",
+                "url": "https://api.github.com/repos/TeknooSoftware/east-paas/zipball/81c4682ca6c68a3c535987f2240eb420f8f97d37",
+                "reference": "81c4682ca6c68a3c535987f2240eb420f8f97d37",
                 "shasum": ""
             },
             "require": {
@@ -8921,7 +8994,7 @@
                 "teknoo/east-website": "^3.0.10",
                 "teknoo/immutable": "^2.0.3",
                 "teknoo/recipe": "^2.0.8",
-                "teknoo/states": "^4.0.15"
+                "teknoo/states": "^4.1.0"
             },
             "require-dev": {
                 "behat/behat": "~3.7",
@@ -8929,27 +9002,31 @@
                 "doctrine/common": "~2.12",
                 "doctrine/mongodb-odm": "~2.1",
                 "doctrine/mongodb-odm-bundle": "~4.2",
-                "guzzlehttp/guzzle": "~6.5||~7.0",
+                "guzzlehttp/guzzle": "^6.5.5||~7.0",
+                "guzzlehttp/promises": "~1.0",
                 "laminas/laminas-diactoros": "~2.3",
                 "league/flysystem": "~1.1",
                 "maclof/kubernetes-client": "^0.18.0",
                 "pdepend/pdepend": "~2.8",
                 "phploc/phploc": "~7.0",
-                "phpstan/phpstan": "^0.12.39",
+                "phpstan/phpstan": "^0.12.42",
                 "phpunit/phpunit": "~9.3",
+                "psr/http-factory": "^1.0.1",
+                "psr/http-message": "^1.0.1",
                 "roave/security-advisories": "dev-master",
                 "sebastian/phpcpd": "~6.0",
-                "squizlabs/php_codesniffer": "~3.5",
-                "symfony/form": "*",
+                "squizlabs/php_codesniffer": "^3.5.6",
+                "symfony/form": "~4.4||~5.1",
                 "symfony/http-kernel": "~4.4||~5.1",
-                "symfony/messenger": "*",
-                "symfony/options-resolver": "*",
-                "symfony/process": "*",
-                "symfony/property-access": "*",
+                "symfony/messenger": "~4.4||~5.1",
+                "symfony/options-resolver": "~4.4||~5.1",
+                "symfony/process": "~4.4||~5.1",
+                "symfony/property-access": "~4.4||~5.1",
+                "symfony/property-info": "~4.4||~5.1",
                 "symfony/psr-http-message-bridge": "~2.0",
                 "symfony/security-core": "~4.4||~5.1",
-                "symfony/serializer": "*",
-                "symfony/yaml": "*",
+                "symfony/serializer": "~4.4||~5.1",
+                "symfony/yaml": "~4.4||~5.1",
                 "teknoo/bridge-phpdi-symfony": "^4.0.0"
             },
             "type": "library",
@@ -9005,20 +9082,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-09-10T07:57:32+00:00"
+            "time": "2020-09-18T07:22:17+00:00"
         },
         {
             "name": "teknoo/east-website",
-            "version": "3.1.0",
+            "version": "3.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TeknooSoftware/east-website.git",
-                "reference": "6f645636ee31af4cf9b092b510ea3ed830bf6810"
+                "reference": "e0cb57838f5cc599e68c7cd00e58f0eb0ccefbf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TeknooSoftware/east-website/zipball/6f645636ee31af4cf9b092b510ea3ed830bf6810",
-                "reference": "6f645636ee31af4cf9b092b510ea3ed830bf6810",
+                "url": "https://api.github.com/repos/TeknooSoftware/east-website/zipball/e0cb57838f5cc599e68c7cd00e58f0eb0ccefbf6",
+                "reference": "e0cb57838f5cc599e68c7cd00e58f0eb0ccefbf6",
                 "shasum": ""
             },
             "require": {
@@ -9041,11 +9118,13 @@
                 "laminas/laminas-diactoros": "~2.2",
                 "pdepend/pdepend": "~2.8",
                 "phploc/phploc": "~7.0",
-                "phpstan/phpstan": "^0.12.39",
+                "phpstan/phpstan": "^0.12.42",
                 "phpunit/phpunit": "~9.1",
+                "psr/http-factory": "^1.0.1",
+                "psr/http-message": "^1.0.1",
                 "roave/security-advisories": "dev-master",
                 "sebastian/phpcpd": "~6.0",
-                "squizlabs/php_codesniffer": "~3.5",
+                "squizlabs/php_codesniffer": "^3.5.6",
                 "symfony/console": "~4.4||~5.1",
                 "symfony/form": "~4.4||~5.1",
                 "symfony/http-kernel": "~4.4||~5.1",
@@ -9097,20 +9176,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-09-10T07:57:40+00:00"
+            "time": "2020-09-18T08:00:54+00:00"
         },
         {
             "name": "teknoo/east-website-symfony",
-            "version": "3.1.1",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TeknooSoftware/east-website-symfony.git",
-                "reference": "2f1f6201d0903da5574cf9a26afd60dc824c1125"
+                "reference": "d976f600dff1ae8b6f43ca92ab3d6f2949618ac6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TeknooSoftware/east-website-symfony/zipball/2f1f6201d0903da5574cf9a26afd60dc824c1125",
-                "reference": "2f1f6201d0903da5574cf9a26afd60dc824c1125",
+                "url": "https://api.github.com/repos/TeknooSoftware/east-website-symfony/zipball/d976f600dff1ae8b6f43ca92ab3d6f2949618ac6",
+                "reference": "d976f600dff1ae8b6f43ca92ab3d6f2949618ac6",
                 "shasum": ""
             },
             "require": {
@@ -9120,16 +9199,19 @@
                 "ext-mongodb": "*",
                 "ext-simplexml": "*",
                 "laminas/laminas-diactoros": "~2.2",
+                "psr/http-factory": "^1.0.1",
+                "psr/http-message": "^1.0.1",
                 "symfony/console": "~4.4||~5.1",
                 "symfony/form": "~4.4||~5.1",
                 "symfony/http-kernel": "~4.4||~5.1",
                 "symfony/psr-http-message-bridge": "~2.0",
+                "symfony/security-bundle": "~4.4||~5.1",
                 "symfony/security-core": "~4.4||~5.1",
                 "symfony/templating": "~4.4||~5.1",
                 "symfony/yaml": "~4.4||~5.1",
-                "teknoo/bridge-phpdi-symfony": "^4.0.0",
-                "teknoo/east-foundation-symfony": "^3.0.4",
-                "teknoo/east-website": "~3.1",
+                "teknoo/bridge-phpdi-symfony": "^4.0.2",
+                "teknoo/east-foundation-symfony": "^3.1.2",
+                "teknoo/east-website": "^3.1.3",
                 "twig/twig": "~2.0||~3.0"
             },
             "require-dev": {
@@ -9160,20 +9242,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-09-10T20:16:46+00:00"
+            "time": "2020-09-18T11:19:59+00:00"
         },
         {
             "name": "teknoo/immutable",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TeknooSoftware/immutable.git",
-                "reference": "3558f1729b19474dfa0941e93f9aee9d6d04b255"
+                "reference": "1e5ce99bfb33ef8f1ba2bb1d09ea8b020b22c5ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TeknooSoftware/immutable/zipball/3558f1729b19474dfa0941e93f9aee9d6d04b255",
-                "reference": "3558f1729b19474dfa0941e93f9aee9d6d04b255",
+                "url": "https://api.github.com/repos/TeknooSoftware/immutable/zipball/1e5ce99bfb33ef8f1ba2bb1d09ea8b020b22c5ba",
+                "reference": "1e5ce99bfb33ef8f1ba2bb1d09ea8b020b22c5ba",
                 "shasum": ""
             },
             "require": {
@@ -9222,20 +9304,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-08-25T12:28:56+00:00"
+            "time": "2020-09-18T07:21:17+00:00"
         },
         {
             "name": "teknoo/recipe",
-            "version": "2.0.8",
+            "version": "2.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TeknooSoftware/recipe.git",
-                "reference": "0f47d61aaa0bdfe418547e70820d39eb77d6e6f0"
+                "reference": "28c2650e4b12ce0ce32976277ab6e9aeb523fa3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TeknooSoftware/recipe/zipball/0f47d61aaa0bdfe418547e70820d39eb77d6e6f0",
-                "reference": "0f47d61aaa0bdfe418547e70820d39eb77d6e6f0",
+                "url": "https://api.github.com/repos/TeknooSoftware/recipe/zipball/28c2650e4b12ce0ce32976277ab6e9aeb523fa3b",
+                "reference": "28c2650e4b12ce0ce32976277ab6e9aeb523fa3b",
                 "shasum": ""
             },
             "require": {
@@ -9281,7 +9363,7 @@
                     "role": "Software architect, Lead developer"
                 }
             ],
-            "description": "Inspired by cooking, allows the creation of dynamic workflow, called here recipe, following the #east programming and using middleware, configurable via DI or any configuration, if a set of conditions (ingredients) are available.",
+            "description": "Inspired by cooking, allows the creation of dynamics workflows, called here recipe, following the #east programming and using middleware, configurable via DI or any configuration, if a set of conditions (ingredients) are available.",
             "homepage": "http://teknoo.software/recipe",
             "keywords": [
                 "East",
@@ -9296,20 +9378,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-08-25T12:29:17+00:00"
+            "time": "2020-09-18T07:59:25+00:00"
         },
         {
             "name": "teknoo/states",
-            "version": "4.0.15",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TeknooSoftware/states.git",
-                "reference": "1c5a6291db985e315f3ae6b966fe294234bbfe93"
+                "reference": "e70ce2c9d5bd9ecbe726bc6314b137f60d915d1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TeknooSoftware/states/zipball/1c5a6291db985e315f3ae6b966fe294234bbfe93",
-                "reference": "1c5a6291db985e315f3ae6b966fe294234bbfe93",
+                "url": "https://api.github.com/repos/TeknooSoftware/states/zipball/e70ce2c9d5bd9ecbe726bc6314b137f60d915d1e",
+                "reference": "e70ce2c9d5bd9ecbe726bc6314b137f60d915d1e",
                 "shasum": ""
             },
             "require": {
@@ -9362,7 +9444,7 @@
                     "role": "Software architect, Lead developer"
                 }
             ],
-            "description": "Library to create PHP classes following the State pattern in PHP. This can be a cleaner way for an object to change its behavior at runtime without resorting to large monolithic conditional statements and this improve maintainability and workflows writing.",
+            "description": "Library to create classes following the State pattern in PHP. This can be a cleaner way for an object to change its behavior at runtime without resorting to large monolithic conditional statements and this improve maintainability and workflow writing.",
             "homepage": "http://teknoo.software/states",
             "keywords": [
                 "behavioral software design pattern",
@@ -9378,7 +9460,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-08-25T12:29:33+00:00"
+            "time": "2020-09-18T07:19:48+00:00"
         },
         {
             "name": "twig/extensions",
@@ -10257,16 +10339,16 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "5.2.1",
+            "version": "5.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "d870572532cd70bc3fab58f2e23ad423c8404c44"
+                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/d870572532cd70bc3fab58f2e23ad423c8404c44",
-                "reference": "d870572532cd70bc3fab58f2e23ad423c8404c44",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/069a785b2141f5bcf49f3e353548dc1cce6df556",
+                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556",
                 "shasum": ""
             },
             "require": {
@@ -10305,20 +10387,20 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2020-08-15T11:14:08+00:00"
+            "time": "2020-09-03T19:13:55+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "e878a14a65245fbe78f8080eba03b47c3b705651"
+                "reference": "6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/e878a14a65245fbe78f8080eba03b47c3b705651",
-                "reference": "e878a14a65245fbe78f8080eba03b47c3b705651",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0",
+                "reference": "6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0",
                 "shasum": ""
             },
             "require": {
@@ -10350,7 +10432,7 @@
                 }
             ],
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
-            "time": "2020-06-27T10:12:23+00:00"
+            "time": "2020-09-17T18:55:26+00:00"
         },
         {
             "name": "phploc/phploc",
@@ -10530,16 +10612,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "9.1.8",
+            "version": "9.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "f98f8466126d83b55b924a94d2244c53c216b8fb"
+                "reference": "5134e2a65ec48e2f7126d12f1503a9889c660bdf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/f98f8466126d83b55b924a94d2244c53c216b8fb",
-                "reference": "f98f8466126d83b55b924a94d2244c53c216b8fb",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/5134e2a65ec48e2f7126d12f1503a9889c660bdf",
+                "reference": "5134e2a65ec48e2f7126d12f1503a9889c660bdf",
                 "shasum": ""
             },
             "require": {
@@ -10547,7 +10629,7 @@
                 "ext-libxml": "*",
                 "ext-xmlwriter": "*",
                 "nikic/php-parser": "^4.8",
-                "php": "^7.3 || ^8.0",
+                "php": ">=7.3",
                 "phpunit/php-file-iterator": "^3.0.3",
                 "phpunit/php-text-template": "^2.0.2",
                 "sebastian/code-unit-reverse-lookup": "^2.0.2",
@@ -10599,7 +10681,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-07T08:07:10+00:00"
+            "time": "2020-09-18T05:25:29+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -10828,16 +10910,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.3.8",
+            "version": "9.3.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "93d78d8e2a06393a0d0c1ead6fe9984f1af1f88c"
+                "reference": "919333f2d046a89f9238f15d09f17a8f0baa5cc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/93d78d8e2a06393a0d0c1ead6fe9984f1af1f88c",
-                "reference": "93d78d8e2a06393a0d0c1ead6fe9984f1af1f88c",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/919333f2d046a89f9238f15d09f17a8f0baa5cc2",
+                "reference": "919333f2d046a89f9238f15d09f17a8f0baa5cc2",
                 "shasum": ""
             },
             "require": {
@@ -10851,7 +10933,7 @@
                 "myclabs/deep-copy": "^1.10.1",
                 "phar-io/manifest": "^2.0.1",
                 "phar-io/version": "^3.0.2",
-                "php": "^7.3 || ^8.0",
+                "php": ">=7.3",
                 "phpspec/prophecy": "^1.11.1",
                 "phpunit/php-code-coverage": "^9.1.5",
                 "phpunit/php-file-iterator": "^3.0.4",
@@ -10923,7 +11005,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-08-27T06:30:58+00:00"
+            "time": "2020-09-12T09:34:39+00:00"
         },
         {
             "name": "roave/security-advisories",
@@ -10931,12 +11013,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "697cfbd44fa43ebb5cd9d5ce6d8fc0edcbce85b8"
+                "reference": "81cb95735a719403eddb77fc78e21362b56d9ea9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/697cfbd44fa43ebb5cd9d5ce6d8fc0edcbce85b8",
-                "reference": "697cfbd44fa43ebb5cd9d5ce6d8fc0edcbce85b8",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/81cb95735a719403eddb77fc78e21362b56d9ea9",
+                "reference": "81cb95735a719403eddb77fc78e21362b56d9ea9",
                 "shasum": ""
             },
             "conflict": {
@@ -10982,8 +11064,8 @@
                 "doctrine/orm": ">=2,<2.4.8|>=2.5,<2.5.1",
                 "dolibarr/dolibarr": "<11.0.4",
                 "dompdf/dompdf": ">=0.6,<0.6.2",
-                "drupal/core": ">=7,<7.72|>=8,<8.8.8|>=8.9,<8.9.1|>=9,<9.0.1",
-                "drupal/drupal": ">=7,<7.72|>=8,<8.8.8|>=8.9,<8.9.1|>=9,<9.0.1",
+                "drupal/core": ">=7,<7.73|>=8,<8.8.10|>=8.9,<8.9.6|>=9,<9.0.6",
+                "drupal/drupal": ">=7,<7.73|>=8,<8.8.10|>=8.9,<8.9.6|>=9,<9.0.6",
                 "endroid/qr-code-bundle": "<3.4.2",
                 "enshrined/svg-sanitize": "<0.13.1",
                 "erusev/parsedown": "<1.7.2",
@@ -10992,11 +11074,12 @@
                 "ezsystems/ezfind-ls": ">=5.3,<5.3.6.1|>=5.4,<5.4.11.1|>=2017.12,<2017.12.0.1",
                 "ezsystems/ezplatform": ">=1.7,<1.7.9.1|>=1.13,<1.13.5.1|>=2.5,<2.5.4",
                 "ezsystems/ezplatform-admin-ui": ">=1.3,<1.3.5|>=1.4,<1.4.6",
-                "ezsystems/ezplatform-admin-ui-assets": ">=4,<4.2",
+                "ezsystems/ezplatform-admin-ui-assets": ">=4,<4.2.1|>=5,<5.0.1|>=5.1,<5.1.1",
                 "ezsystems/ezplatform-kernel": ">=1,<1.0.2.1",
                 "ezsystems/ezplatform-user": ">=1,<1.0.1",
                 "ezsystems/ezpublish-kernel": ">=5.3,<5.3.12.1|>=5.4,<5.4.14.2|>=6,<6.7.9.1|>=6.8,<6.13.6.3|>=7,<7.2.4.1|>=7.3,<7.3.2.1|>=7.5,<7.5.7.1",
                 "ezsystems/ezpublish-legacy": ">=5.3,<5.3.12.6|>=5.4,<5.4.14.1|>=2011,<2017.12.7.2|>=2018.6,<2018.6.1.4|>=2018.9,<2018.9.1.3|>=2019.3,<2019.3.4.2",
+                "ezsystems/platform-ui-assets-bundle": ">=4.2,<4.2.3",
                 "ezsystems/repository-forms": ">=2.3,<2.3.2.1",
                 "ezyang/htmlpurifier": "<4.1.1",
                 "firebase/php-jwt": "<2",
@@ -11054,6 +11137,7 @@
                 "paragonie/random_compat": "<2",
                 "paypal/merchant-sdk-php": "<3.12",
                 "pear/archive_tar": "<1.4.4",
+                "personnummer/personnummer": "<3.0.2",
                 "phpfastcache/phpfastcache": ">=5,<5.0.13",
                 "phpmailer/phpmailer": "<6.1.6",
                 "phpmussel/phpmussel": ">=1,<1.6",
@@ -11065,6 +11149,7 @@
                 "phpxmlrpc/extras": "<0.6.1",
                 "pimcore/pimcore": "<6.3",
                 "prestashop/autoupgrade": ">=4,<4.10.1",
+                "prestashop/contactform": ">1.0.1,<4.3",
                 "prestashop/gamification": "<2.3.2",
                 "prestashop/ps_facetedsearch": "<3.4.1",
                 "privatebin/privatebin": "<1.2.2|>=1.3,<1.3.2",
@@ -11073,6 +11158,7 @@
                 "pusher/pusher-php-server": "<2.2.1",
                 "rainlab/debugbar-plugin": "<3.1",
                 "robrichards/xmlseclibs": "<3.0.4",
+                "sabberworm/php-css-parser": ">=1,<1.0.1|>=2,<2.0.1|>=3,<3.0.1|>=4,<4.0.1|>=5,<5.0.9|>=5.1,<5.1.3|>=5.2,<5.2.1|>=6,<6.0.2|>=7,<7.0.4|>=8,<8.0.1|>=8.1,<8.1.1|>=8.2,<8.2.1|>=8.3,<8.3.1",
                 "sabre/dav": ">=1.6,<1.6.99|>=1.7,<1.7.11|>=1.8,<1.8.9",
                 "scheb/two-factor-bundle": ">=0,<3.26|>=4,<4.11",
                 "sensiolabs/connect": "<4.2.3",
@@ -11159,7 +11245,7 @@
                 "willdurand/js-translation-bundle": "<2.1.1",
                 "yii2mod/yii2-cms": "<1.9.2",
                 "yiisoft/yii": ">=1.1.14,<1.1.15",
-                "yiisoft/yii2": "<2.0.15",
+                "yiisoft/yii2": "<2.0.38",
                 "yiisoft/yii2-bootstrap": "<2.0.4",
                 "yiisoft/yii2-dev": "<2.0.15",
                 "yiisoft/yii2-elasticsearch": "<2.0.5",
@@ -11221,7 +11307,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-02T19:02:24+00:00"
+            "time": "2020-09-18T13:01:53+00:00"
         },
         {
             "name": "sebastian/cli-parser",
