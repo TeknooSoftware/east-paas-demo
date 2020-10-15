@@ -24,12 +24,3 @@ services:
   App\:
     resource: '../src/*'
     exclude: '../src/{patch,DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
-
-  Psr\Http\Message\ServerRequestFactoryInterface:
-    class: 'Laminas\Diactoros\ServerRequestFactory'
-
-  Psr\Http\Message\UploadedFileFactoryInterface:
-    class: 'Laminas\Diactoros\UploadedFileFactory'
-
-  teknoo.east.website.endpoint.media.stream.factory:
-    class: 'Laminas\Diactoros\StreamFactory'
