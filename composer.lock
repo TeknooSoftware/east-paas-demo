@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb37d356da03d09417cbc8ea5afc6358",
+    "content-hash": "161a50584bbe15247362d37c3b2df518",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -2300,16 +2300,16 @@
         },
         {
             "name": "league/mime-type-detection",
-            "version": "1.5.0",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/mime-type-detection.git",
-                "reference": "ea2fbfc988bade315acd5967e6d02274086d0f28"
+                "reference": "353f66d7555d8a90781f6f5e7091932f9a4250aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/ea2fbfc988bade315acd5967e6d02274086d0f28",
-                "reference": "ea2fbfc988bade315acd5967e6d02274086d0f28",
+                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/353f66d7555d8a90781f6f5e7091932f9a4250aa",
+                "reference": "353f66d7555d8a90781f6f5e7091932f9a4250aa",
                 "shasum": ""
             },
             "require": {
@@ -2347,7 +2347,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-21T18:10:53+00:00"
+            "time": "2020-10-18T11:50:25+00:00"
         },
         {
             "name": "maclof/kubernetes-client",
@@ -8935,16 +8935,16 @@
         },
         {
             "name": "teknoo/east-foundation",
-            "version": "3.2.1",
+            "version": "3.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TeknooSoftware/east-foundation.git",
-                "reference": "ec668fa768a1215e208d85c957288ba49af40669"
+                "reference": "fa3f41206240982e5fbeb8b0f4abb1f763ff049a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TeknooSoftware/east-foundation/zipball/ec668fa768a1215e208d85c957288ba49af40669",
-                "reference": "ec668fa768a1215e208d85c957288ba49af40669",
+                "url": "https://api.github.com/repos/TeknooSoftware/east-foundation/zipball/fa3f41206240982e5fbeb8b0f4abb1f763ff049a",
+                "reference": "fa3f41206240982e5fbeb8b0f4abb1f763ff049a",
                 "shasum": ""
             },
             "require": {
@@ -9020,20 +9020,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-10-12T18:47:34+00:00"
+            "time": "2020-10-18T21:17:53+00:00"
         },
         {
             "name": "teknoo/east-foundation-symfony",
-            "version": "3.2.1",
+            "version": "3.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TeknooSoftware/east-foundation-symfony.git",
-                "reference": "903910559b7c42e85258fa02a034a4c8191235aa"
+                "reference": "f6394646442da474b4cdaaf1e4691b30033e61c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TeknooSoftware/east-foundation-symfony/zipball/903910559b7c42e85258fa02a034a4c8191235aa",
-                "reference": "903910559b7c42e85258fa02a034a4c8191235aa",
+                "url": "https://api.github.com/repos/TeknooSoftware/east-foundation-symfony/zipball/f6394646442da474b4cdaaf1e4691b30033e61c9",
+                "reference": "f6394646442da474b4cdaaf1e4691b30033e61c9",
                 "shasum": ""
             },
             "require": {
@@ -9049,7 +9049,7 @@
                 "symfony/serializer": "~4.4||~5.1",
                 "symfony/yaml": "~4.4||~5.1",
                 "teknoo/bridge-phpdi-symfony": "^4.0.3",
-                "teknoo/east-foundation": "^3.2.1"
+                "teknoo/east-foundation": "^3.2.2"
             },
             "require-dev": {
                 "roave/security-advisories": "dev-master"
@@ -9079,7 +9079,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-10-12T19:24:36+00:00"
+            "time": "2020-10-18T22:35:15+00:00"
         },
         {
             "name": "teknoo/east-paas",
@@ -9196,23 +9196,23 @@
         },
         {
             "name": "teknoo/east-website",
-            "version": "3.2.1",
+            "version": "3.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TeknooSoftware/east-website.git",
-                "reference": "cf2188688564d72addd405e287fb0738f33ef421"
+                "reference": "d6e87f3821809f46526343fd761af154622e6132"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TeknooSoftware/east-website/zipball/cf2188688564d72addd405e287fb0738f33ef421",
-                "reference": "cf2188688564d72addd405e287fb0738f33ef421",
+                "url": "https://api.github.com/repos/TeknooSoftware/east-website/zipball/d6e87f3821809f46526343fd761af154622e6132",
+                "reference": "d6e87f3821809f46526343fd761af154622e6132",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "php": "~7.4||~8.0",
                 "php-di/php-di": "~6.2",
-                "teknoo/east-foundation": "^3.2.1",
+                "teknoo/east-foundation": "^3.2.2",
                 "teknoo/immutable": "^2.0.5",
                 "teknoo/recipe": "^2.1.1",
                 "teknoo/states": "^4.1.2"
@@ -9286,20 +9286,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-10-12T19:14:49+00:00"
+            "time": "2020-10-18T23:15:06+00:00"
         },
         {
             "name": "teknoo/east-website-symfony",
-            "version": "3.2.1",
+            "version": "3.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TeknooSoftware/east-website-symfony.git",
-                "reference": "9b57d7db564c1e4c0d309b8800ec6e626f523255"
+                "reference": "f5b521e0043c7a27e1509a51e3bafb704d22fe62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TeknooSoftware/east-website-symfony/zipball/9b57d7db564c1e4c0d309b8800ec6e626f523255",
-                "reference": "9b57d7db564c1e4c0d309b8800ec6e626f523255",
+                "url": "https://api.github.com/repos/TeknooSoftware/east-website-symfony/zipball/f5b521e0043c7a27e1509a51e3bafb704d22fe62",
+                "reference": "f5b521e0043c7a27e1509a51e3bafb704d22fe62",
                 "shasum": ""
             },
             "require": {
@@ -9320,8 +9320,8 @@
                 "symfony/templating": "~4.4||~5.1",
                 "symfony/yaml": "~4.4||~5.1",
                 "teknoo/bridge-phpdi-symfony": "^4.0.3",
-                "teknoo/east-foundation-symfony": "^3.2.1",
-                "teknoo/east-website": "^3.2.1",
+                "teknoo/east-foundation-symfony": "^3.2.2",
+                "teknoo/east-website": "^3.2.4",
                 "twig/twig": "~2.0||~3.0"
             },
             "require-dev": {
@@ -9352,7 +9352,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-10-12T19:33:51+00:00"
+            "time": "2020-10-18T23:24:37+00:00"
         },
         {
             "name": "teknoo/immutable",
@@ -10667,16 +10667,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.49",
+            "version": "0.12.50",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "9a6136c2b39d5214da78de37128d5fe08e5d5b05"
+                "reference": "b8248f9c81265af75d6d969ca3252aaf3e998f3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/9a6136c2b39d5214da78de37128d5fe08e5d5b05",
-                "reference": "9a6136c2b39d5214da78de37128d5fe08e5d5b05",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/b8248f9c81265af75d6d969ca3252aaf3e998f3a",
+                "reference": "b8248f9c81265af75d6d969ca3252aaf3e998f3a",
                 "shasum": ""
             },
             "require": {
@@ -10719,7 +10719,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-12T14:10:44+00:00"
+            "time": "2020-10-16T12:22:23+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -11124,12 +11124,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "ba5d234b3a1559321b816b64aafc2ce6728799ff"
+                "reference": "327370943772f9917bc2dc2aa4263db2d572a112"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/ba5d234b3a1559321b816b64aafc2ce6728799ff",
-                "reference": "ba5d234b3a1559321b816b64aafc2ce6728799ff",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/327370943772f9917bc2dc2aa4263db2d572a112",
+                "reference": "327370943772f9917bc2dc2aa4263db2d572a112",
                 "shasum": ""
             },
             "conflict": {
@@ -11229,6 +11229,7 @@
                 "magento/magento1ee": ">=1,<1.14.4.3",
                 "magento/product-community-edition": ">=2,<2.2.10|>=2.3,<2.3.2-p.2",
                 "marcwillmann/turn": "<0.3.3",
+                "mediawiki/core": ">=1.31,<1.31.4|>=1.32,<1.32.4|>=1.33,<1.33.1",
                 "mittwald/typo3_forum": "<1.2.1",
                 "monolog/monolog": ">=1.8,<1.12",
                 "namshi/jose": "<2.2",
@@ -11425,7 +11426,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-08T21:02:27+00:00"
+            "time": "2020-10-19T07:02:45+00:00"
         },
         {
             "name": "sebastian/cli-parser",
