@@ -1659,7 +1659,7 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v8.12.3",
+            "version": "v8.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
@@ -1713,7 +1713,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v8.12.3",
+            "version": "v8.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -1761,7 +1761,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v8.12.3",
+            "version": "v8.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -1807,16 +1807,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v8.12.3",
+            "version": "v8.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "4f8b2d2589dec51b3fb9844e35606a1f1a7536e8"
+                "reference": "21ca3da65ffb4efbaa489aee9c36d01ab6d0c3e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/4f8b2d2589dec51b3fb9844e35606a1f1a7536e8",
-                "reference": "4f8b2d2589dec51b3fb9844e35606a1f1a7536e8",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/21ca3da65ffb4efbaa489aee9c36d01ab6d0c3e2",
+                "reference": "21ca3da65ffb4efbaa489aee9c36d01ab6d0c3e2",
                 "shasum": ""
             },
             "require": {
@@ -1870,7 +1870,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2020-10-29T15:17:19+00:00"
+            "time": "2020-11-03T13:46:08+00:00"
         },
         {
             "name": "incenteev/composer-parameter-handler",
